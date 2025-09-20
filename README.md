@@ -47,12 +47,17 @@ Add the following line at the bottom:
 This runs the script every minute and appends output to the log file.
 
 Verify cron is running:
+
 systemctl status cron
 
 View logs:
+
 tail -f /home/ubuntu/system-health-monitor/system_health.log
 
 then push the code to github with logs:
+
 git add .
+
 git commit -m " system health logs"
+
 git push -u origin main
